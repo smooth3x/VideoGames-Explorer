@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "111287582618",
+    "project_id": "videogames-explorer-hit",
+    "storage_bucket": "videogames-explorer-hit.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:111287582618:android:0b3baebd70c34d3be80423",
+        "android_client_info": {
+          "package_name": "com.example.videogames_explorer"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBA9UV7O43PfE4YiQ2bCV22YdAtvV_sjFE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

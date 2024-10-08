@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <style name="CustomSearchView" parent="Widget.AppCompat.SearchView">
+        <item name="android:textColor">#FFFFFF</item> <!-- Sets the input text color -->
+        <item name="android:textColorHint">#B0B0B0</item> <!-- Sets the hint text color -->
+        <item name="android:queryBackground">@android:color/transparent</item> <!-- Sets transparent background -->
+        <item name="android:searchHintIcon">@android:color/transparent</item> <!-- Hides the hint icon -->
+    </style>
+</resources>

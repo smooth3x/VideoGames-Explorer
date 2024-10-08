@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navgraph"
+    app:startDestination="@id/login_or_signup">
+
+    <fragment
+        android:id="@+id/login_or_signup"
+        android:name="com.example.videogames_explorer.fragments.login_or_signup"
+        android:label="fragment_login_or_signup"
+        tools:layout="@layout/fragment_login_or_signup" >
+        <action
+            android:id="@+id/action_login_or_signup_to_signUp"
+            app:destination="@id/signUp" />
+        <action
+            android:id="@+id/action_login_or_signup_to_game_list"
+            app:destination="@id/game_list" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUp"
+        android:name="com.example.videogames_explorer.fragments.sign_up"
+        android:label="fragment_sign_up"
+        tools:layout="@layout/fragment_sign_up" >
+        <action
+            android:id="@+id/action_signUp_to_game_list"
+            app:destination="@id/game_list" />
+    </fragment>
+    <fragment
+        android:id="@+id/game_list"
+        android:name="com.example.videogames_explorer.fragments.game_list"
+        android:label="fragment_game_list"
+        tools:layout="@layout/fragment_game_list" >
+        <action
+            android:id="@+id/action_game_list_to_game_details"
+            app:destination="@id/game_details" />
+    </fragment>
+    <fragment
+        android:id="@+id/game_details"
+        android:name="com.example.videogames_explorer.fragments.game_details"
+        android:label="fragment_game_details"
+        tools:layout="@layout/fragment_game_details" />
+</navigation>
