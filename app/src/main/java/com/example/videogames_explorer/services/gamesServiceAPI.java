@@ -26,7 +26,7 @@ public class gamesServiceAPI {
     public static ArrayList<Game> getHotGames() {
         ArrayList<Game> arr = new ArrayList<>();
 
-        String sURL = "https://www.giantbomb.com/api/games/?api_key=2b5704ca211042d7e36887cc9ca19bd263caeb05&format=json&filter=original_release_date:2009-01-01+00%3A00%3A00|2024-10-09+00%3A00%3A00&sort=original_release_date:desc&limit=50&field_list=name,deck,description,original_release_date,platforms,image";
+        String sURL = "https://www.giantbomb.com/api/games/?api_key=2b5704ca211042d7e36887cc9ca19bd263caeb05&format=json&filter=original_release_date:2009-01-01+00%3A00%3A00|2024-10-09+00%3A00%3A00&sort=original_release_date:desc&limit=100&field_list=name,deck,description,original_release_date,platforms,image";
 
         URL url = null;
 

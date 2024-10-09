@@ -9,7 +9,6 @@
     app:cardBackgroundColor="@android:color/transparent"
     tools:context=".fragments.game_list">
 
-    <!-- Horizontal LinearLayout for SearchView and Button -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -26,15 +25,14 @@
             android:textColor="#FFFFFF"
             android:textColorHint="#B0B0B0" />
 
-        <!--<ImageButton
-            android:id="@+id/advancedSearchButton"
+        <Button
+            android:id="@+id/resetSearchButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/rounded_button"
             android:backgroundTint="#FFC107"
-            android:padding="10dp"
             android:scaleType="fitCenter"
-            android:src="@drawable/ic_advanced_search" />!-->
+            android:text="Reset"/>
     </LinearLayout>
 
     <androidx.recyclerview.widget.RecyclerView

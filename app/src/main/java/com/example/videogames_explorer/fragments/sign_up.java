@@ -38,23 +38,6 @@ public class sign_up extends Fragment {
         mAuth = FirebaseAuth.getInstance();
     }
 
-    /*public void addData(View view) {
-
-        EditText phoneT = view.findViewById(R.id.registerPhoneNumber);
-        EditText emailT = view.findViewById(R.id.registerUserEmailAddress);
-
-        FirebaseUser user = mAuth.getCurrentUser();
-        String uid = user.getUid();
-
-        ((MainActivity)getActivity()).uid = uid;
-
-        FirebaseDatabase database = FirebaseDatabase.getInstance();
-        DatabaseReference myRef = database.getReference("users").child(uid);
-
-        Person p = new Person(phoneT.getText().toString(), emailT.getText().toString());
-        myRef.setValue(p);
-    }*/
-
     public void signUp(View view) {
         EditText emailT = view.findViewById( R.id.registerUserMail);
         EditText passT = view.findViewById(R.id.registerUserPassword);

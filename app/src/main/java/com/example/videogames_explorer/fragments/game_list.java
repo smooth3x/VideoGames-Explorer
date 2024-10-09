@@ -1,6 +1,7 @@
 package com.example.videogames_explorer.fragments;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 
 
@@ -11,6 +12,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.SearchView;
 
 import com.example.videogames_explorer.R;
@@ -53,15 +55,34 @@ public class game_list extends Fragment {
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
             public boolean onQueryTextSubmit(String s) {
-                ArrayList<Game> searchResults = gamesServiceAPI.searchGames(s);
-                adapter.updateGameList(searchResults);
+                if( s.trim().isEmpty() ) {
+                    if( arr.size() < 100 ) {
+                        ArrayList<Game> hotGames = gamesServiceAPI.getHotGames();
+                        adapter.updateGameList(hotGames);
+                    }
+                } else {
+                    ArrayList<Game> searchResults = gamesServiceAPI.searchGames(s.trim());
+                    adapter.updateGameList(searchResults);
+                }
                 return true;
             }
 
             @Override
             public boolean onQueryTextChange(String s) {
-                //adapter.filter(s);
                 return false;
+            }
+        });
+
+        Button resetSearchButton = fragView.findViewById(R.id.resetSearchButton);
+        resetSearchButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if( arr.size() < 100 ) {
+                    ArrayList<Game> hotGames = gamesServiceAPI.getHotGames();
+                    adapter.updateGameList(hotGames);
+                    searchView.setQuery("", false);
+                    searchView.clearFocus();
+                }
             }
         });
 
