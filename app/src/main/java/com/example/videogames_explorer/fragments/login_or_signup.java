@@ -1,5 +1,6 @@
 package com.example.videogames_explorer.fragments;
 
+import android.content.Context;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -15,6 +16,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import android.view.inputmethod.InputMethodManager;
 
 import com.example.videogames_explorer.R;
 import com.example.videogames_explorer.activities.MainActivity;
@@ -68,7 +71,7 @@ public class login_or_signup extends Fragment {
                             if (exception instanceof FirebaseAuthInvalidUserException) {
                                 Toast.makeText(getContext(), "No account found with this email.", Toast.LENGTH_LONG).show();
                             } else if (exception instanceof FirebaseAuthInvalidCredentialsException) {
-                                Toast.makeText(getContext(), "Incorrect password. Please try again.", Toast.LENGTH_LONG).show();
+                                Toast.makeText(getContext(), "Incorrect password.", Toast.LENGTH_LONG).show();
                             } else {
                                 Toast.makeText(getContext(), "Authentication failed: " + exception.getMessage(), Toast.LENGTH_LONG).show();
                             }
@@ -88,6 +91,11 @@ public class login_or_signup extends Fragment {
             @Override
             public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
                 if (actionId == EditorInfo.IME_ACTION_DONE) {
+                    InputMethodManager imm = (InputMethodManager) requireActivity().getSystemService(Context.INPUT_METHOD_SERVICE);
+                    if (imm != null) {
+                        imm.hideSoftInputFromWindow(v.getWindowToken(), 0);
+                    }
+
                     login(fragView);
                     return true;
                 }

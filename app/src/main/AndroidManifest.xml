@@ -10,7 +10,7 @@
         android:icon="@drawable/main_logo"
         android:label="Video Games Explorer"
         android:roundIcon="@drawable/main_logo"
-        android:supportsRtl="true"
+        android:supportsRtl="false"
         android:theme="@style/Theme.AppCompat.NoActionBar"
         tools:targetApi="31">
         <activity
