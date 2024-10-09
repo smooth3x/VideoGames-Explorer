@@ -59,10 +59,12 @@ public class game_list extends Fragment {
                     if( arr.size() < 100 ) {
                         ArrayList<Game> hotGames = gamesServiceAPI.getHotGames();
                         adapter.updateGameList(hotGames);
+                        searchView.clearFocus();
                     }
                 } else {
                     ArrayList<Game> searchResults = gamesServiceAPI.searchGames(s.trim());
                     adapter.updateGameList(searchResults);
+                    searchView.clearFocus();
                 }
                 return true;
             }
