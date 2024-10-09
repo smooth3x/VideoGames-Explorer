@@ -10,18 +10,11 @@
 
 ## How To Use
 
-- Home Page: Login to an existing account or Sign-up
+- <b>Home Page</b>: Login to an existing account or Sign-up
+- <b>Games List Page</b>:
+    - <b>Default</b>: Browse the lastest 100 games
+    - <b>Searched Game</b>: Results of searched query
+- <b>Game Details Page</b>: Get basic information about the game, watch trailers and even buy a copy
 
-  - <img src="https://i.imgur.com/13i9hkh.png">
-
-- Games List Page:
-
-  - Browse the lastest 100 games
-  - <img src="https://i.imgur.com/LUiZw2c.png">
-  
-  - Or search for a game you already know
-  - <img src="https://i.imgur.com/tNAHWO2.png">
-
-- Game Details Page: Get basic information about the game, watch trailers and even buy a copy
-  
-  - <img src="https://i.imgur.com/one9HNL.png">
+<br>
+<img src="https://i.imgur.com/aBU5P8X.png">
