@@ -5,7 +5,7 @@
 <h4 align="center">An android application to search and explore Video Games using <a href="https://www.giantbomb.com/api/">Giantbomb API</a></h4>
 
 <p align="center">
-  <a href="#how-to-use">How To Use</a> •
+  • <a href="#how-to-use">How To Use</a> •
 </p>
 
 ## How To Use
