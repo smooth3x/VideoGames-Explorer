@@ -12,7 +12,8 @@
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
         android:orientation="vertical"
-        android:padding="16dp">
+        android:padding="16dp"
+        >
 
         <ImageView
             android:id="@+id/gameImage"
@@ -33,7 +34,8 @@
             android:textAlignment="center"
             android:textColor="#FFFFFF"
             android:textSize="24sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:gravity="center"/>
 
         <TextView
             android:id="@+id/textAbout"
@@ -43,7 +45,8 @@
             android:text="About"
             android:textAlignment="center"
             android:textColor="#32B637"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:gravity="center"/>
 
         <TextView
             android:id="@+id/gameDeck"
@@ -53,7 +56,8 @@
             android:text="Game Deck"
             android:textAlignment="center"
             android:textColor="#B0B0B0"
-            android:textSize="18sp" />
+            android:textSize="18sp"
+            android:gravity="center"/>
 
         <TextView
             android:id="@+id/textReleaseDate"
@@ -63,7 +67,8 @@
             android:text="Release Date"
             android:textAlignment="center"
             android:textColor="#32B637"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:gravity="center"/>
 
         <TextView
             android:id="@+id/gameReleaseDate"
@@ -73,7 +78,8 @@
             android:text="Release Date"
             android:textAlignment="center"
             android:textColor="#B0B0B0"
-            android:textSize="16sp" />
+            android:textSize="16sp"
+            android:gravity="center"/>
 
         <TextView
             android:id="@+id/textPlatforms"
@@ -83,7 +89,8 @@
             android:text="Platforms"
             android:textAlignment="center"
             android:textColor="#32B637"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:gravity="center"/>
 
         <TextView
             android:id="@+id/gamePlatforms"
@@ -93,7 +100,8 @@
             android:text="Platforms"
             android:textAlignment="center"
             android:textColor="#B0B0B0"
-            android:textSize="16sp" />
+            android:textSize="16sp"
+            android:gravity="center"/>
 
         <Button
             android:id="@+id/gameTrailer"
