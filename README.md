@@ -1,8 +1,8 @@
 <h1 align="center">
-<img src="https://i.imgur.com/3jzRH85.png" alt="Music Genre Explorer">
+<img src="https://i.imgur.com/zX8Paq2.png" alt="Music Genre Explorer">
 </h1>
 
-<h4 align="center">An android application to search and explore Video Games using <a href="https://www.giantbomb.com/api/">Giantbomb API</a></h4>
+<h4 align="center">A simple android application for exploring Video Games using <a href="https://www.giantbomb.com/api/">Giantbomb API</a></h4>
 
 <p align="center">
   • <a href="#how-to-use">How To Use</a> •
