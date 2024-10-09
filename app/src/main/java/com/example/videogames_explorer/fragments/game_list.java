@@ -1,6 +1,8 @@
 package com.example.videogames_explorer.fragments;
 
+
 import android.os.Bundle;
+
 
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -37,7 +39,6 @@ public class game_list extends Fragment {
         super.onCreate(savedInstanceState);
     }
 
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View fragView = inflater.inflate(R.layout.fragment_game_list, container, false);
@@ -70,5 +71,4 @@ public class game_list extends Fragment {
 
         return fragView;
     }
-
 }
