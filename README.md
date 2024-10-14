@@ -4,10 +4,6 @@
 
 <h4 align="center">A simple android application for exploring Video Games using <a href="https://www.giantbomb.com/api/">Giantbomb API</a></h4>
 
-<p align="center">
-  • <a href="#how-to-use">How To Use</a> •
-</p>
-
 ## How To Use
 
 - <b>Home Page</b>: Login to an existing account or Sign-up
